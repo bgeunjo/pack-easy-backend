@@ -12,7 +12,7 @@ Instagram clone
 -[ ] Follow / Unfollow User
 -[ ] See the Full Photo
 -[ ] Edit my profile
--[ ] Create account
+-[X] Create account
 -[ ] Upload photos
 -[ ] Edit the photo(Delete)
 -[ ] See the feed

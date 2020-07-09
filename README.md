@@ -3,7 +3,11 @@ Instagram clone
 
 ## user stories
 
--[ ] Log in
+-[X] Create account
+
+-[ ] Request Secret
+
+-[ ] Confirm Secret (Login)
 
 -[ ] Like / Unlike a photo
 
@@ -20,8 +24,6 @@ Instagram clone
 -[ ] See the Full Photo
 
 -[ ] Edit my profile
-
--[X] Create account
 
 -[ ] Upload photos
 

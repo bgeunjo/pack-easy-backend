@@ -5,11 +5,11 @@ Instagram clone
 
 -[X] Create account
 
--[ ] Request Secret
+-[X] Request Secret
 
--[ ] Confirm Secret (Login)
+-[X] Confirm Secret (Login)
 
--[ ] Like / Unlike a photo
+-[X] Like / Unlike a photo
 
 -[ ] Comment on a photo
 

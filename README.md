@@ -11,7 +11,7 @@ Instagram clone
 
 -[X] Like / Unlike a photo
 
--[ ] Comment on a photo
+-[X] Comment on a photo
 
 -[ ] Search by user
 

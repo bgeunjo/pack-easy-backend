@@ -13,13 +13,13 @@ Instagram clone
 
 -[X] Comment on a photo
 
--[ ] Search by user
+-[X] Search by user
 
--[ ] Search by location
+-[X] Search by location
 
--[ ] See user profile
+-[] See user profile
 
--[ ] Follow / Unfollow User
+-[X] Follow / Unfollow User
 
 -[ ] See the Full Photo
 

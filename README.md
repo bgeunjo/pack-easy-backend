@@ -17,9 +17,11 @@ Instagram clone
 
 -[X] Search by location
 
--[] See user profile
-
 -[X] Follow / Unfollow User
+
+-[X] See user profile
+
+-[X] See my profile
 
 -[ ] See the Full Photo
 

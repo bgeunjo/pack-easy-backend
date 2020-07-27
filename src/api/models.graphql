@@ -1,15 +1,21 @@
 type User {
   id: ID!
   username: String!
+  avatar: String
   email: String! 
   firstName: String 
   lastName: String
+  fullName: String
+  isFollowing: Boolean
+  isSelf: Boolean
   bio: String
   posts: [Post!]!
   likes: [Like!]!
   comments: [Comment!]!
-  follwers: [User!]!  
-  following: [User!]! 
+  followers: [User!]!  
+  following: [User!]!
+  followingCount: Int!
+  followersCount: Int!
   rooms: [Room!]!
 }
 
@@ -21,6 +27,10 @@ type Post{
   user: User!
   likes: [Like!]!
   comments: [Comment!]!
+  isLiked: Boolean!
+  likeCount: Int!
+  createdAt: String
+  updatedAt: String
 }
 
 type Like{
@@ -46,7 +56,7 @@ type File{
 
 type Room{
   id: ID! 
-  participatns: [User!]!
+  participants: [User!]!
   message: [Message!]!
 }
 

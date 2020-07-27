@@ -1,0 +1,4 @@
+type Query{
+    seeFullPost(id:String!): Post!
+}
+

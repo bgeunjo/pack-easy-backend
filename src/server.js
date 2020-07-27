@@ -7,14 +7,13 @@ import {sendSecretMail} from "./utils";
 import passport from "passport"
 import "./passport"
 import {authenticateJwt} from "./passport"
-
-sendSecretMail("airmancho@naver.com","123");
+import {isAuthenticated} from "./middlewares"
 
 const PORT = process.env.PORT || 4000;
 
 const server = new GraphQLServer({
     schema,
-    context: ({request})=>({request})
+    context: ({request})=>({request, isAuthenticated})
 }); // context is used when sharing information between resolvers
 
 server.express.use(logger("dev"));

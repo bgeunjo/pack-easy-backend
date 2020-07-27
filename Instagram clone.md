@@ -174,6 +174,8 @@ Response
 
 **Mutation** vs **Query** : **Mutation**은 데이터를 쓰는 것에 대한 요청, **Query**는 읽는 것에 대 한 요청.
 
+**Subscription** : 특정 이벤트가 발생했을 때 서버가 클라이언트로 데이터를 전송해주는 GraphQL 기능.
+
 
 
 ### 3
@@ -220,3 +222,22 @@ user를 찾으면 콜백함수를 실행하여 req에 user를 추가한다.
 
 -[ ] See the feed
 
+**4**
+
+**apollo-boost** : grahpql-yoga처럼 설정이 다 되어있는 client pacakage
+
+**Apollo client?** **Apollo Client** is a comprehensive state management library for JavaScript that enables you to manage both local and remote data with GraphQL. Use it to fetch, cache, and modify application data, all while automatically updating your UI. : GraphQL을 이용해서 데이터를 관리하기 쉽게 해주는 라이브러리.
+
+**styled Components**
+
+- `ThemeProvider` : 자식 컴포넌트들에게도 제공된 테마 적용할 수 있게.
+
+컴포넌트 최상단에 `ThemeProvider`. `ThemProvider` 컴포넌트에 `theme`을 props로 넣어준다.
+
+그렇게 되면 자식 컴포넌트들에서 그 테마를 사용할 수 있다.
+
+**라우팅** : 다른 주소에 따라 다른 뷰를 보여주는 것.
+
+**react-apollo hooks**
+
+`ApolloProvider`

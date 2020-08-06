@@ -1,5 +1,4 @@
 import { prisma } from "../../../generated/prisma-client";
-
 export default {
     Post: {
         isLiked: (parent,_,{request})=> {
@@ -21,12 +20,19 @@ export default {
         },
         likeCount : parent =>  prisma.likesConnection({
             where:{post :{id: parent.id}}
-        }).aggregate()
+        })
+        .aggregate()
+        .count(),
+        commentCount : parent =>  prisma.commentsConnection({
+            where:{post :{id: parent.id}}
+        })
+        .aggregate()
         .count(),
         files  : ({id}) => prisma.post({id}).files(),
         comments  : ({id}) => prisma.post({id}).comments(),
         user  : ({id}) => prisma.post({id}).user(),
         createdAt: ({id}) => prisma.post({id}).createdAt(),
-        updatedAt: ({id}) => prisma.post({id}).updatedAt()
+        updatedAt: ({id}) => prisma.post({id}).updatedAt(),
+        likes: ({id}) => prisma.post({id}).likes()
     }
 }

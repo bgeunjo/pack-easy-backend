@@ -26,8 +26,8 @@ export const sendSecretMail =(address, secret)=>{
     const email={
         from: "airmancho@naver.com",
         to: address,
-        subject: "Login Secret for Instagram clone",
-        html: `Hello! Your login secret is <b>${secret}</b>.<br/> Copy paste on the app/website to log in`
+        subject: "Login Secret for  pack-easy service",
+        html: `Hello! Your login secret is <b>${secret}</b>.<br/>`
     };
     return sendMail(email);
 }

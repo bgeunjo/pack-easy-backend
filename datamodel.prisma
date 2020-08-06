@@ -1,7 +1,9 @@
 type User {
   id: ID! @id
   username: String! @unique
-  avatar: String
+  avatar: String @default(
+    value: "https://www.drx.gg/img/logo-x-drx-blue@2x.png"
+  )
   email: String! @unique
   firstName: String @default(value: "")
   lastName: String

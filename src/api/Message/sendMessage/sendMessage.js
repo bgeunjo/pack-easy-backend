@@ -1,5 +1,4 @@
 import { prisma } from "../../../../generated/prisma-client"
-import { ROOM_FRAGMENT } from "../../../fragment";
 
 // 방을 찾고, 없으면 만들고, 메세지 만든다.
 export default {
@@ -33,9 +32,9 @@ export default {
                         }
                         ]
                     }
-                }).$fragment(ROOM_FRAGMENT);
+                });
             }else{
-                room= await prisma.room({id: roomId}).$fragment(ROOM_FRAGMENT);
+                room= await prisma.room({id: roomId});
             }
             if(!room){
                 throw Error("Room not found.");
